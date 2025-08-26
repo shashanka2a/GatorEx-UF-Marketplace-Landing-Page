@@ -7,10 +7,11 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-8">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-[#FF6900] to-[#0021A5] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">G</span>
-            </div>
-            <span className="text-xl font-bold text-gray-900">GatorEx</span>
+            <img 
+              src="/logo.png" 
+              alt="GatorEx Logo" 
+              className="h-10 w-auto"
+            />
           </div>
           
           <nav className="hidden md:flex items-center space-x-6">
