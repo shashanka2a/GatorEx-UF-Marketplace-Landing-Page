@@ -85,12 +85,12 @@ export default function Hero() {
           {/* Trust Indicators */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 animate-fade-in-up">
             <div className="text-center space-y-2">
-              <div className="text-3xl font-bold text-white">12K+</div>
-              <div className="text-white/80">Active Gators</div>
+              <div className="text-3xl font-bold text-white">52K+</div>
+              <div className="text-white/80">UF Students</div>
             </div>
             <div className="text-center space-y-2">
-              <div className="text-3xl font-bold text-white">25K+</div>
-              <div className="text-white/80">Items Sold</div>
+              <div className="text-3xl font-bold text-white">$10M</div>
+              <div className="text-white/80">Market Value</div>
             </div>
             <div className="text-center space-y-2">
               <div className="text-3xl font-bold text-white">4.8★</div>
