@@ -69,9 +69,27 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-blue-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-blue-200">
-          <p>&copy; 2024 GatorEx. Made with 🧡 by UF students for UF students.</p>
-          <p className="mt-2 md:mt-0">All rights reserved.</p>
+        <div className="border-t border-blue-800 mt-12 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center text-blue-200 mb-4">
+            <div className="flex items-center space-x-6 mb-4 md:mb-0">
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                <span className="text-sm">12K+ Verified Students</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                <span className="text-sm">@ufl.edu Verified Only</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                <span className="text-sm">4.8★ Trust Rating</span>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row justify-between items-center text-blue-200">
+            <p>&copy; 2024 GatorEx. Made with 🧡 by UF students for UF students.</p>
+            <p className="mt-2 md:mt-0">All rights reserved.</p>
+          </div>
         </div>
       </div>
     </footer>

@@ -3,9 +3,7 @@ import Header from '../src/components/Header'
 import Hero from '../src/components/Hero'
 import InstantSell from '../src/components/InstantSell'
 import Categories from '../src/components/Categories'
-import HowItWorks from '../src/components/HowItWorks'
 import LiveListings from '../src/components/LiveListings'
-import TrustSafety from '../src/components/TrustSafety'
 import Footer from '../src/components/Footer'
 
 export default function Home() {
@@ -21,9 +19,7 @@ export default function Home() {
         <Hero />
         <InstantSell />
         <Categories />
-        <HowItWorks />
         <LiveListings />
-        <TrustSafety />
         <Footer />
       </div>
     </>
