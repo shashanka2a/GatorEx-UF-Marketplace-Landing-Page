@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { Search, Menu } from "lucide-react";
+import { Search, Menu, MessageCircle, Zap } from "lucide-react";
 
 export default function Header() {
   return (
@@ -23,6 +23,13 @@ export default function Header() {
         </div>
         
         <div className="flex items-center space-x-4">
+          {/* WhatsApp Instant Sell Hint */}
+          <div className="hidden lg:flex items-center space-x-2 bg-gradient-to-r from-[#25D366]/10 to-[#128C7E]/10 border border-[#25D366]/20 rounded-full px-4 py-2">
+            <MessageCircle className="w-4 h-4 text-[#25D366]" />
+            <span className="text-sm font-medium text-[#25D366]">Sell via WhatsApp</span>
+            <Zap className="w-3 h-3 text-[#FF6900]" />
+          </div>
+          
           <div className="hidden md:flex items-center space-x-2 bg-gray-50 rounded-lg px-3 py-2 min-w-[300px]">
             <Search className="w-4 h-4 text-gray-400" />
             <input 

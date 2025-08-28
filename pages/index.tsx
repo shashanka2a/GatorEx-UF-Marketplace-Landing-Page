@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '../src/components/Header'
 import Hero from '../src/components/Hero'
+import InstantSell from '../src/components/InstantSell'
 import Categories from '../src/components/Categories'
 import HowItWorks from '../src/components/HowItWorks'
 import LiveListings from '../src/components/LiveListings'
@@ -18,6 +19,7 @@ export default function Home() {
       <div className="min-h-screen bg-white">
         <Header />
         <Hero />
+        <InstantSell />
         <Categories />
         <HowItWorks />
         <LiveListings />

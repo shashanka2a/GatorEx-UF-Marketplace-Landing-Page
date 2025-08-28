@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { Search, ArrowRight, Shield } from "lucide-react";
+import { Search, ArrowRight, Shield, MessageCircle } from "lucide-react";
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export default function Hero() {
@@ -32,6 +32,10 @@ export default function Hero() {
               The trusted marketplace connecting UF students for furniture, textbooks, 
               electronics, bikes, and subletting opportunities.
             </p>
+            <div className="inline-flex items-center space-x-3 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 text-white/95 text-lg font-medium">
+              <MessageCircle className="w-5 h-5 text-[#25D366]" />
+              <span>Sell instantly via WhatsApp • No listing required</span>
+            </div>
           </div>
           
           {/* Central Search Bar */}

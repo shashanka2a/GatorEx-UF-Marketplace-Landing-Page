@@ -108,69 +108,7 @@ export default function TrustSafety() {
           </div>
         </div>
 
-        {/* WhatsApp QR Section with Float Animation */}
-        <div className="bg-gradient-to-r from-[#25D366] to-[#128C7E] rounded-3xl p-12 text-white shadow-2xl animate-fade-in-up">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="flex items-center space-x-4">
-                <div className="p-3 bg-white/10 backdrop-blur-sm rounded-2xl">
-                  <MessageCircle className="w-8 h-8" />
-                </div>
-                <h3 className="text-4xl font-bold">Instant Sell via WhatsApp</h3>
-              </div>
-              
-              <div className="space-y-6">
-                <p className="text-xl opacity-95 leading-relaxed">
-                  Skip the listing process entirely! Our WhatsApp bot makes selling as easy as sending a message.
-                </p>
-                <p className="text-lg opacity-90">
-                  Just snap a photo, add a quick description, and we&apos;ll create your GatorEx listing automatically.
-                </p>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="flex items-center space-x-4">
-                  <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold">1</span>
-                  </div>
-                  <span className="text-lg">Scan QR code with your camera</span>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold">2</span>
-                  </div>
-                  <span className="text-lg">Send photo + description via WhatsApp</span>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold">3</span>
-                  </div>
-                  <span className="text-lg">We handle the rest - listing goes live!</span>
-                </div>
-              </div>
-            </div>
-            
-            <div className="flex justify-center">
-              <div className="bg-white p-8 rounded-3xl shadow-2xl text-center animate-float">
-                <div className="w-56 h-56 bg-gray-100 rounded-2xl flex items-center justify-center mb-6 relative overflow-hidden">
-                  <QrCode className="w-32 h-32 text-gray-400" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-sm text-gray-500 text-center">
-                      <div className="font-semibold">WhatsApp QR</div>
-                      <div className="text-xs mt-1">Scan to sell instantly</div>
-                    </div>
-                  </div>
-                </div>
-                <p className="text-[#25D366] font-bold text-lg mb-2">
-                  Ready to Sell?
-                </p>
-                <p className="text-gray-500 text-sm">
-                  Opens WhatsApp chat directly
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   );
