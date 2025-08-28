@@ -4,6 +4,7 @@ import Hero from '../src/components/Hero'
 import InstantSell from '../src/components/InstantSell'
 import Categories from '../src/components/Categories'
 import LiveListings from '../src/components/LiveListings'
+import Roadmap from '../src/components/Roadmap'
 import Footer from '../src/components/Footer'
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         <InstantSell />
         <Categories />
         <LiveListings />
+        <Roadmap />
         <Footer />
       </div>
     </>
