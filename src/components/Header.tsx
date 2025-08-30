@@ -39,11 +39,18 @@ export default function Header() {
             />
           </div>
           
-          <Button variant="outline" className="hidden md:flex">
+          <Button 
+            variant="outline" 
+            className="hidden md:flex"
+            onClick={() => window.open('https://app.gatorex.shop', '_blank')}
+          >
             Sign In
           </Button>
           
-          <Button className="bg-[#FF6900] hover:bg-[#e55a00] text-white">
+          <Button 
+            className="bg-[#FF6900] hover:bg-[#e55a00] text-white"
+            onClick={() => window.open('https://app.gatorex.shop', '_blank')}
+          >
             Post Listing
           </Button>
           
