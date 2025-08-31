@@ -23,11 +23,11 @@ export default function Header() {
         </div>
         
         <div className="flex items-center space-x-4">
-          {/* WhatsApp Instant Sell Hint */}
-          <div className="hidden lg:flex items-center space-x-2 bg-gradient-to-r from-[#25D366]/10 to-[#128C7E]/10 border border-[#25D366]/20 rounded-full px-4 py-2">
-            <MessageCircle className="w-4 h-4 text-[#25D366]" />
-            <span className="text-sm font-medium text-[#25D366]">Sell via WhatsApp</span>
-            <Zap className="w-3 h-3 text-[#FF6900]" />
+          {/* AI Chatbot Instant Sell Hint */}
+          <div className="hidden lg:flex items-center space-x-2 bg-gradient-to-r from-[#FF6900]/10 to-[#0021A5]/10 border border-[#FF6900]/20 rounded-full px-4 py-2">
+            <MessageCircle className="w-4 h-4 text-[#FF6900]" />
+            <span className="text-sm font-medium text-[#FF6900]">Sell in 1 Min via AI Chat</span>
+            <Zap className="w-3 h-3 text-[#0021A5]" />
           </div>
           
           <div 

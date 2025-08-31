@@ -11,7 +11,7 @@ const roadmapItems = [
     icon: Rocket,
     color: "bg-[#FF6900]",
     features: [
-      "WhatsApp Bot Integration",
+      "AI Chatbot Integration",
       "UF Email Verification",
       "Campus Partnerships",
       "Student Organization Outreach"

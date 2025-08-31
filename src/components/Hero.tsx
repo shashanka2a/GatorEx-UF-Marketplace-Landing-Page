@@ -33,8 +33,8 @@ export default function Hero() {
               electronics, bikes, and subletting opportunities.
             </p>
             <div className="inline-flex items-center space-x-3 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 text-white/95 text-lg font-medium">
-              <MessageCircle className="w-5 h-5 text-[#25D366]" />
-              <span>Sell instantly via WhatsApp • No listing required</span>
+              <MessageCircle className="w-5 h-5 text-[#FF6900]" />
+              <span>Sell in under 1 minute via AI Chat • Instant listing creation</span>
             </div>
           </div>
           
