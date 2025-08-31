@@ -89,7 +89,7 @@ export default function Roadmap() {
             <span className="bg-gradient-to-r from-[#FF6900] to-orange-500 bg-clip-text text-transparent"> Student Commerce</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            From MVP to market leader - here's how we're revolutionizing the UF marketplace experience
+            From MVP to market leader - here&apos;s how we&apos;re revolutionizing the UF marketplace experience
           </p>
         </div>
 
