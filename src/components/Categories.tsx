@@ -16,7 +16,8 @@ const categories = [
     count: "1,200+ listings",
     color: "bg-blue-50 text-blue-600",
     gradient: "from-blue-500 to-blue-600",
-    description: "Course books, study guides, novels"
+    description: "Course books, study guides, novels",
+    category: "textbooks"
   },
   {
     icon: Sofa,
@@ -24,7 +25,8 @@ const categories = [
     count: "950+ listings", 
     color: "bg-orange-50 text-orange-600",
     gradient: "from-orange-500 to-orange-600",
-    description: "Desks, chairs, beds, storage"
+    description: "Desks, chairs, beds, storage",
+    category: "furniture"
   },
   {
     icon: Laptop,
@@ -32,7 +34,8 @@ const categories = [
     count: "680+ listings",
     color: "bg-purple-50 text-purple-600",
     gradient: "from-purple-500 to-purple-600", 
-    description: "Laptops, phones, tablets, tech"
+    description: "Laptops, phones, tablets, tech",
+    category: "electronics"
   },
   {
     icon: Bike,
@@ -40,7 +43,8 @@ const categories = [
     count: "320+ listings",
     color: "bg-green-50 text-green-600",
     gradient: "from-green-500 to-green-600",
-    description: "Bicycles, scooters, skateboards"
+    description: "Bicycles, scooters, skateboards",
+    category: "bikes"
   },
   {
     icon: Home,
@@ -48,7 +52,8 @@ const categories = [
     count: "240+ listings",
     color: "bg-red-50 text-red-600",
     gradient: "from-red-500 to-red-600",
-    description: "Apartments, rooms, housing"
+    description: "Apartments, rooms, housing",
+    category: "sublets"
   },
   {
     icon: Shirt,
@@ -56,7 +61,8 @@ const categories = [
     count: "450+ listings",
     color: "bg-pink-50 text-pink-600",
     gradient: "from-pink-500 to-pink-600",
-    description: "UF apparel, casual wear, formal"
+    description: "UF apparel, casual wear, formal",
+    category: "clothing"
   }
 ];
 
@@ -81,6 +87,7 @@ export default function Categories() {
                 key={category.name} 
                 className="group p-8 hover:shadow-2xl transition-all duration-500 cursor-pointer border-0 bg-white hover:bg-gradient-to-br hover:from-white hover:to-gray-50 animate-fade-in-up relative overflow-hidden"
                 style={{ animationDelay: `${index * 100}ms` }}
+                onClick={() => window.open(`https://app.gatorex.shop?category=${category.category}`, '_blank')}
               >
                 {/* Hover Gradient Overlay */}
                 <div className={`absolute inset-0 bg-gradient-to-r ${category.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
@@ -111,7 +118,10 @@ export default function Categories() {
         </div>
         
         <div className="text-center mt-16 animate-fade-in-up">
-          <Button className="bg-gradient-to-r from-[#0021A5] to-blue-600 hover:from-blue-700 hover:to-blue-800 text-white px-10 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          <Button 
+            className="bg-gradient-to-r from-[#0021A5] to-blue-600 hover:from-blue-700 hover:to-blue-800 text-white px-10 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+            onClick={() => window.open('https://app.gatorex.shop', '_blank')}
+          >
             Explore All Categories
           </Button>
         </div>

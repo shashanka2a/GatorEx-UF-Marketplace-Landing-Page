@@ -91,7 +91,10 @@ export default function LiveListings() {
               Fresh finds from your fellow Gators - updated in real-time
             </p>
           </div>
-          <Button className="bg-gradient-to-r from-[#0021A5] to-blue-600 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          <Button 
+            className="bg-gradient-to-r from-[#0021A5] to-blue-600 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+            onClick={() => window.open('https://app.gatorex.shop', '_blank')}
+          >
             View All Listings
           </Button>
         </div>
@@ -187,7 +190,10 @@ export default function LiveListings() {
                 Post a &ldquo;wanted&rdquo; listing and let sellers come to you! Our community of Gators 
                 will help you find exactly what you&apos;re looking for.
               </p>
-              <Button className="bg-gradient-to-r from-[#FF6900] to-orange-500 hover:from-orange-600 hover:to-orange-600 text-white px-10 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <Button 
+                className="bg-gradient-to-r from-[#FF6900] to-orange-500 hover:from-orange-600 hover:to-orange-600 text-white px-10 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                onClick={() => window.open('https://app.gatorex.shop/sell', '_blank')}
+              >
                 Post Your Wants
               </Button>
             </div>

@@ -101,10 +101,16 @@ export default function HowItWorks() {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <Button className="bg-white text-[#0021A5] hover:bg-gray-100 px-10 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <Button 
+                  className="bg-white text-[#0021A5] hover:bg-gray-100 px-10 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                  onClick={() => window.open('https://app.gatorex.shop', '_blank')}
+                >
                   Start Shopping
                 </Button>
-                <Button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#0021A5] px-10 py-4 text-lg rounded-xl transition-all duration-300 transform hover:-translate-y-1">
+                <Button 
+                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#0021A5] px-10 py-4 text-lg rounded-xl transition-all duration-300 transform hover:-translate-y-1"
+                  onClick={() => window.open('https://app.gatorex.shop/sell', '_blank')}
+                >
                   List Your Items
                 </Button>
               </div>

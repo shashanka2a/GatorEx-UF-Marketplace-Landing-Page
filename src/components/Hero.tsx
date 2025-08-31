@@ -53,7 +53,10 @@ export default function Hero() {
                         className="w-full pl-16 pr-6 py-5 rounded-xl border-none outline-none text-lg bg-transparent"
                       />
                     </div>
-                    <Button className="bg-gradient-to-r from-[#FF6900] to-orange-500 hover:from-orange-600 hover:to-orange-600 text-white px-8 py-5 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+                    <Button 
+                      className="bg-gradient-to-r from-[#FF6900] to-orange-500 hover:from-orange-600 hover:to-orange-600 text-white px-8 py-5 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
+                      onClick={() => window.open('https://app.gatorex.shop', '_blank')}
+                    >
                       Search <ArrowRight className="ml-2 w-5 h-5" />
                     </Button>
                   </div>
@@ -64,9 +67,19 @@ export default function Hero() {
             {/* Popular Tags */}
             <div className="flex flex-wrap justify-center gap-3">
               <span className="text-white/70 text-sm">Popular searches:</span>
-              {["Textbooks", "IKEA Furniture", "MacBook", "Campus Bike", "Summer Sublet"].map((tag) => (
-                <button key={tag} className="px-4 py-2 bg-white/10 backdrop-blur-sm hover:bg-white/20 rounded-full text-sm text-white transition-all duration-300 hover:scale-105">
-                  {tag}
+              {[
+                { name: "Textbooks", category: "textbooks" },
+                { name: "IKEA Furniture", category: "furniture" },
+                { name: "MacBook", category: "electronics" },
+                { name: "Campus Bike", category: "bikes" },
+                { name: "Summer Sublet", category: "sublets" }
+              ].map((tag) => (
+                <button 
+                  key={tag.name} 
+                  className="px-4 py-2 bg-white/10 backdrop-blur-sm hover:bg-white/20 rounded-full text-sm text-white transition-all duration-300 hover:scale-105"
+                  onClick={() => window.open(`https://app.gatorex.shop?category=${tag.category}`, '_blank')}
+                >
+                  {tag.name}
                 </button>
               ))}
             </div>
@@ -74,10 +87,17 @@ export default function Hero() {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up">
-            <Button className="bg-white text-[#0021A5] hover:bg-gray-100 px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+            <Button 
+              className="bg-white text-[#0021A5] hover:bg-gray-100 px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
+              onClick={() => window.open('https://app.gatorex.shop', '_blank')}
+            >
               Start Browsing
             </Button>
-            <Button variant="outline" className="border-2 border-white text-[#0021A5] bg-white hover:bg-white hover:text-[#0021A5] px-8 py-4 text-lg rounded-xl transition-all duration-300 transform hover:-translate-y-0.5">
+            <Button 
+              variant="outline" 
+              className="border-2 border-white text-[#0021A5] bg-white hover:bg-white hover:text-[#0021A5] px-8 py-4 text-lg rounded-xl transition-all duration-300 transform hover:-translate-y-0.5"
+              onClick={() => window.open('https://app.gatorex.shop/sell', '_blank')}
+            >
               Post a Listing
             </Button>
           </div>

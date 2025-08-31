@@ -15,8 +15,8 @@ export default function Header() {
           </div>
           
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#buy" className="text-gray-600 hover:text-[#FF6900] transition-colors">Buy</a>
-            <a href="#sell" className="text-gray-600 hover:text-[#FF6900] transition-colors">Sell</a>
+            <a href="https://app.gatorex.shop" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#FF6900] transition-colors">Shop</a>
+            <a href="https://app.gatorex.shop/sell" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#FF6900] transition-colors">Sell</a>
             <a href="#categories" className="text-gray-600 hover:text-[#FF6900] transition-colors">Categories</a>
             <a href="#how-it-works" className="text-gray-600 hover:text-[#FF6900] transition-colors">How it Works</a>
           </nav>
@@ -42,14 +42,14 @@ export default function Header() {
           <Button 
             variant="outline" 
             className="hidden md:flex"
-            onClick={() => window.open('https://app.gatorex.shop', '_blank')}
+            onClick={() => window.open('https://app.gatorex.shop/me', '_blank')}
           >
             Sign In
           </Button>
           
           <Button 
             className="bg-[#FF6900] hover:bg-[#e55a00] text-white"
-            onClick={() => window.open('https://app.gatorex.shop', '_blank')}
+            onClick={() => window.open('https://app.gatorex.shop/sell', '_blank')}
           >
             Post Listing
           </Button>

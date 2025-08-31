@@ -64,10 +64,23 @@ export default function InstantSell() {
                   </div>
                 </div>
                 
-                <Button className="bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:from-[#128C7E] hover:to-[#25D366] text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Open WhatsApp
-                </Button>
+                <div className="space-y-3">
+                  <Button className="bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:from-[#128C7E] hover:to-[#25D366] text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 w-full">
+                    <MessageCircle className="w-5 h-5 mr-2" />
+                    Open WhatsApp
+                  </Button>
+                  <div className="text-center">
+                    <span className="text-gray-500 text-sm">or </span>
+                    <a 
+                      href="https://app.gatorex.shop" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-[#0021A5] hover:text-[#FF6900] font-medium text-sm transition-colors"
+                    >
+                      browse online
+                    </a>
+                  </div>
+                </div>
               </div>
             </Card>
           </div>

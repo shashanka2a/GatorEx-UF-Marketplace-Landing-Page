@@ -31,22 +31,22 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="font-bold text-lg">Categories</h4>
             <ul className="space-y-2 text-blue-200">
-              <li><a href="#" className="hover:text-white transition-colors">Textbooks</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Furniture</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Electronics</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Bikes & Transport</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Sublets</a></li>
+              <li><a href="https://app.gatorex.shop?category=textbooks" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Textbooks</a></li>
+              <li><a href="https://app.gatorex.shop?category=furniture" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Furniture</a></li>
+              <li><a href="https://app.gatorex.shop?category=electronics" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Electronics</a></li>
+              <li><a href="https://app.gatorex.shop?category=bikes" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Bikes & Transport</a></li>
+              <li><a href="https://app.gatorex.shop?category=sublets" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Sublets</a></li>
             </ul>
           </div>
           
           <div className="space-y-4">
             <h4 className="font-bold text-lg">Support</h4>
             <ul className="space-y-2 text-blue-200">
-              <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Safety Guidelines</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Report an Issue</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><a href="/help" className="hover:text-white transition-colors">Help Center</a></li>
+              <li><a href="/safety" className="hover:text-white transition-colors">Safety Guidelines</a></li>
+              <li><a href="/report" className="hover:text-white transition-colors">Report an Issue</a></li>
+              <li><a href="/terms" className="hover:text-white transition-colors">Terms of Service</a></li>
+              <li><a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
           
@@ -85,6 +85,14 @@ export default function Footer() {
                 <span className="text-sm">4.8★ Trust Rating</span>
               </div>
             </div>
+            <a 
+              href="https://app.gatorex.shop" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-[#FF6900] to-orange-500 hover:from-orange-600 hover:to-orange-600 text-white px-6 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105"
+            >
+              Launch App
+            </a>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center text-blue-200">
             <p>&copy; 2024 GatorEx. Made with 🧡 by UF students for UF students.</p>
