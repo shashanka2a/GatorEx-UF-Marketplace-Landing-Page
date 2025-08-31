@@ -30,12 +30,16 @@ export default function Header() {
             <Zap className="w-3 h-3 text-[#FF6900]" />
           </div>
           
-          <div className="hidden md:flex items-center space-x-2 bg-gray-50 rounded-lg px-3 py-2 min-w-[300px]">
+          <div 
+            className="hidden md:flex items-center space-x-2 bg-gray-50 rounded-lg px-3 py-2 min-w-[300px] cursor-pointer hover:bg-gray-100 transition-colors"
+            onClick={() => window.open('https://app.gatorex.shop', '_blank')}
+          >
             <Search className="w-4 h-4 text-gray-400" />
             <input 
               type="text" 
               placeholder="Search furniture, textbooks, bikes..." 
-              className="bg-transparent border-none outline-none flex-1 text-sm"
+              className="bg-transparent border-none outline-none flex-1 text-sm pointer-events-none"
+              readOnly
             />
           </div>
           

@@ -13,7 +13,7 @@ const categories = [
   {
     icon: BookOpen,
     name: "Textbooks",
-    count: "1,200+ listings",
+    count: "Coming Soon",
     color: "bg-blue-50 text-blue-600",
     gradient: "from-blue-500 to-blue-600",
     description: "Course books, study guides, novels",
@@ -22,7 +22,7 @@ const categories = [
   {
     icon: Sofa,
     name: "Furniture",
-    count: "950+ listings", 
+    count: "Coming Soon", 
     color: "bg-orange-50 text-orange-600",
     gradient: "from-orange-500 to-orange-600",
     description: "Desks, chairs, beds, storage",
@@ -31,7 +31,7 @@ const categories = [
   {
     icon: Laptop,
     name: "Electronics",
-    count: "680+ listings",
+    count: "Coming Soon",
     color: "bg-purple-50 text-purple-600",
     gradient: "from-purple-500 to-purple-600", 
     description: "Laptops, phones, tablets, tech",
@@ -40,7 +40,7 @@ const categories = [
   {
     icon: Bike,
     name: "Bikes & Transport",
-    count: "320+ listings",
+    count: "Coming Soon",
     color: "bg-green-50 text-green-600",
     gradient: "from-green-500 to-green-600",
     description: "Bicycles, scooters, skateboards",
@@ -49,7 +49,7 @@ const categories = [
   {
     icon: Home,
     name: "Sublets",
-    count: "240+ listings",
+    count: "Coming Soon",
     color: "bg-red-50 text-red-600",
     gradient: "from-red-500 to-red-600",
     description: "Apartments, rooms, housing",
@@ -58,7 +58,7 @@ const categories = [
   {
     icon: Shirt,
     name: "Clothing & Gear",
-    count: "450+ listings",
+    count: "Coming Soon",
     color: "bg-pink-50 text-pink-600",
     gradient: "from-pink-500 to-pink-600",
     description: "UF apparel, casual wear, formal",

@@ -42,10 +42,10 @@ export default function InstantSell() {
             <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 border border-green-100">
               <div className="flex items-center space-x-3 mb-2">
                 <MessageCircle className="w-6 h-6 text-green-600" />
-                <span className="font-bold text-lg text-gray-900">Average Sell Time: Under 2 hours</span>
+                <span className="font-bold text-lg text-gray-900">Lightning Fast Selling</span>
               </div>
               <p className="text-gray-600">
-                Most items get their first inquiry within 2 hours of posting.
+                Our WhatsApp bot will automatically create and optimize your listings for maximum visibility.
               </p>
             </div>
           </div>

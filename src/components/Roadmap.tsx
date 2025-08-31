@@ -47,32 +47,7 @@ const roadmapItems = [
   }
 ];
 
-const milestones = [
-  {
-    metric: "1.2K",
-    label: "Beta Users",
-    status: "current",
-    description: "Pre-Launch"
-  },
-  {
-    metric: "5K+",
-    label: "UF Students",
-    status: "projected",
-    description: "By Q2 2025"
-  },
-  {
-    metric: "50K+",
-    label: "Multi-Campus",
-    status: "projected", 
-    description: "By Q4 2025"
-  },
-  {
-    metric: "$1M+",
-    label: "Annual GMV",
-    status: "projected",
-    description: "By End 2025"
-  }
-];
+
 
 export default function Roadmap() {
   return (
@@ -93,31 +68,7 @@ export default function Roadmap() {
           </p>
         </div>
 
-        {/* Current Status */}
-        <div className="bg-gradient-to-r from-[#25D366] to-[#128C7E] rounded-2xl p-8 mb-16 text-white animate-fade-in-up">
-          <div className="grid md:grid-cols-4 gap-6 text-center">
-            <div className="space-y-2">
-              <div className="text-3xl font-bold">500+</div>
-              <div className="text-green-100">Active Listings</div>
-              <Badge className="bg-white/20 text-white hover:bg-white/20">Live Beta</Badge>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl font-bold">1.2K</div>
-              <div className="text-green-100">Verified Students</div>
-              <Badge className="bg-white/20 text-white hover:bg-white/20">Growing</Badge>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl font-bold">4.8★</div>
-              <div className="text-green-100">User Rating</div>
-              <Badge className="bg-white/20 text-white hover:bg-white/20">Excellent</Badge>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl font-bold">25%</div>
-              <div className="text-green-100">User Growth</div>
-              <Badge className="bg-white/20 text-white hover:bg-white/20">Monthly</Badge>
-            </div>
-          </div>
-        </div>
+
 
         {/* Roadmap Timeline */}
         <div className="space-y-8 mb-16">
@@ -167,34 +118,7 @@ export default function Roadmap() {
           })}
         </div>
 
-        {/* Market Opportunity & Projections */}
-        <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 animate-fade-in-up">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Market Opportunity</h3>
-            <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-[#FF6900] to-orange-500 text-white px-8 py-4 rounded-2xl shadow-lg">
-              <span className="text-3xl font-bold">$10M</span>
-              <div className="text-left">
-                <div className="font-bold">UF P2P Market</div>
-                <div className="text-orange-100 text-sm">Annual Market Size</div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="grid md:grid-cols-4 gap-6">
-            {milestones.map((milestone, index) => (
-              <div key={index} className="text-center space-y-3">
-                <div className="text-3xl font-bold bg-gradient-to-r from-[#0021A5] to-blue-600 bg-clip-text text-transparent">
-                  {milestone.metric}
-                </div>
-                <div className="font-semibold text-gray-900">{milestone.label}</div>
-                <div className="text-sm text-gray-600">{milestone.description}</div>
-                <Badge className={`${milestone.status === 'current' ? 'bg-green-100 text-green-700' : 'bg-blue-100 text-blue-700'} hover:bg-current`}>
-                  {milestone.status === 'current' ? 'Current' : 'Projected'}
-                </Badge>
-              </div>
-            ))}
-          </div>
-        </div>
+
       </div>
     </section>
   );

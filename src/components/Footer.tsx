@@ -7,10 +7,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-[#FF6900] to-white rounded-lg flex items-center justify-center">
-                <span className="text-[#0021A5] font-bold text-sm">G</span>
-              </div>
-              <span className="text-xl font-bold">GatorEx</span>
+              <img 
+                src="/logo.png" 
+                alt="GatorEx Logo" 
+                className="h-8 w-auto"
+              />
             </div>
             <p className="text-blue-200">
               The trusted marketplace connecting UF students for buying, selling, and subletting.

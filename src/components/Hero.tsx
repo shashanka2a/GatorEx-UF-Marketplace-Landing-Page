@@ -18,7 +18,7 @@ export default function Hero() {
           <div className="space-y-6 animate-fade-in">
             <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 text-white/90 text-sm">
               <Shield className="w-4 h-4" />
-              <span>UF Students Only • Verified with @ufl.edu</span>
+              <span>Launching Q1 2025 • UF Students Only • @ufl.edu Verified</span>
             </div>
             
             <h1 className="text-6xl lg:text-7xl font-bold text-white leading-tight">
@@ -65,7 +65,7 @@ export default function Hero() {
             </div>
             
             {/* Popular Tags */}
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="flex flex-wrap justify-center items-center gap-3">
               <span className="text-white/70 text-sm">Popular searches:</span>
               {[
                 { name: "Textbooks", category: "textbooks" },
@@ -91,30 +91,30 @@ export default function Hero() {
               className="bg-white text-[#0021A5] hover:bg-gray-100 px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
               onClick={() => window.open('https://app.gatorex.shop', '_blank')}
             >
-              Start Browsing
+              Join Waitlist
             </Button>
             <Button 
               variant="outline" 
               className="border-2 border-white text-[#0021A5] bg-white hover:bg-white hover:text-[#0021A5] px-8 py-4 text-lg rounded-xl transition-all duration-300 transform hover:-translate-y-0.5"
               onClick={() => window.open('https://app.gatorex.shop/sell', '_blank')}
             >
-              Post a Listing
+              Get Early Access
             </Button>
           </div>
           
-          {/* Trust Indicators */}
+          {/* Pre-Launch Indicators */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 animate-fade-in-up">
             <div className="text-center space-y-2">
               <div className="text-3xl font-bold text-white">52K+</div>
-              <div className="text-white/80">UF Students</div>
+              <div className="text-white/80">UF Students Ready</div>
             </div>
             <div className="text-center space-y-2">
-              <div className="text-3xl font-bold text-white">$10M</div>
-              <div className="text-white/80">Market Value</div>
+              <div className="text-3xl font-bold text-white">100%</div>
+              <div className="text-white/80">UF Verified</div>
             </div>
             <div className="text-center space-y-2">
-              <div className="text-3xl font-bold text-white">4.8★</div>
-              <div className="text-white/80">Trust Rating</div>
+              <div className="text-3xl font-bold text-white">Q1 2025</div>
+              <div className="text-white/80">Launch Date</div>
             </div>
           </div>
         </div>
