@@ -96,7 +96,7 @@ export default function Footer() {
             </a>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center text-blue-200">
-            <p>&copy; 2024 GatorEx. Made with 🧡 by UF students for UF students.</p>
+            <p>&copy; 2025 GatorEx. Made with 🧡 by UF students for UF students.</p>
             <p className="mt-2 md:mt-0">All rights reserved.</p>
           </div>
         </div>

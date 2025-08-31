@@ -18,7 +18,7 @@ export default function Hero() {
           <div className="space-y-6 animate-fade-in">
             <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 text-white/90 text-sm">
               <Shield className="w-4 h-4" />
-              <span>Launching Q1 2025 • UF Students Only • @ufl.edu Verified</span>
+              <span>Launching Sep 2025 • UF Students Only • @ufl.edu Verified</span>
             </div>
             
             <h1 className="text-6xl lg:text-7xl font-bold text-white leading-tight">
@@ -113,7 +113,7 @@ export default function Hero() {
               <div className="text-white/80">UF Verified</div>
             </div>
             <div className="text-center space-y-2">
-              <div className="text-3xl font-bold text-white">Q1 2025</div>
+              <div className="text-3xl font-bold text-white">Sep 2025</div>
               <div className="text-white/80">Launch Date</div>
             </div>
           </div>

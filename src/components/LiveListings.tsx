@@ -104,7 +104,7 @@ export default function LiveListings() {
               </h3>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
                 We&apos;re preparing an amazing marketplace experience for UF students. 
-                Be the first to know when we launch in Q1 2025.
+                Be the first to know when we launch in September 2025.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

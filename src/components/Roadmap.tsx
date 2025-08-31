@@ -6,7 +6,7 @@ const roadmapItems = [
   {
     phase: "Phase 1",
     title: "UF Campus Launch",
-    date: "Q1 2025",
+    date: "Sep 2025",
     status: "upcoming",
     icon: Rocket,
     color: "bg-[#FF6900]",
@@ -20,7 +20,7 @@ const roadmapItems = [
   {
     phase: "Phase 2", 
     title: "Florida Expansion",
-    date: "Q2 2025",
+    date: "Dec 2025",
     status: "planned",
     icon: TrendingUp,
     color: "bg-[#0021A5]",
@@ -34,7 +34,7 @@ const roadmapItems = [
   {
     phase: "Phase 3",
     title: "SEC & National Scale",
-    date: "Q3-Q4 2025",
+    date: "May 2026",
     status: "planned", 
     icon: Users,
     color: "bg-green-600",
@@ -57,7 +57,7 @@ export default function Roadmap() {
         <div className="text-center mb-16 animate-fade-in">
           <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-[#0021A5] to-blue-600 text-white px-6 py-3 rounded-full mb-6 shadow-lg">
             <Clock className="w-5 h-5" />
-            <span className="font-bold text-lg">LAUNCH TIMELINE Q1-Q4 2025</span>
+            <span className="font-bold text-lg">LAUNCH TIMELINE 2025-2026</span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Building the Future of 
