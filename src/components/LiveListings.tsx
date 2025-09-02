@@ -103,7 +103,7 @@ export default function LiveListings() {
                 Active Listings
               </h3>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                Browse real listings from verified UF students. Find what you need or sell what you don't.
+                Browse real listings from verified UF students. Find what you need or sell what you don&apos;t.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
