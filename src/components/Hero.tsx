@@ -17,8 +17,8 @@ export default function Hero() {
           {/* Main Headline */}
           <div className="space-y-6 animate-fade-in">
             <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 text-white/90 text-sm">
-              <Shield className="w-4 h-4" />
-              <span>🎉 LIVE NOW • 100+ Students Verified • 20+ Listings in 12 Hours!</span>
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+              <span>LIVE NOW • UF Students Only • @ufl.edu Verified</span>
             </div>
             
             <h1 className="text-6xl lg:text-7xl font-bold text-white leading-tight">
@@ -62,22 +62,7 @@ export default function Hero() {
                   </div>
                 </div>
               </div>
-              
-              {/* Social Proof Badges */}
-              <div className="flex flex-wrap justify-center items-center gap-4 mt-4 text-white/80 text-sm">
-                <div className="flex items-center space-x-1">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span>100+ Students Verified</span>
-                </div>
-                <div className="flex items-center space-x-1">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span>20+ Listings Posted</span>
-                </div>
-                <div className="flex items-center space-x-1">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span>12H Since Launch</span>
-                </div>
-              </div>
+
             </div>
             
             {/* Popular Tags */}

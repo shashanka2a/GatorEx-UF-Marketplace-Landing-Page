@@ -1,7 +1,7 @@
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-import { Clock, MapPin, Heart, Flame } from "lucide-react";
+import { Clock, MapPin, Heart, Flame, Search } from "lucide-react";
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 const listings = [
@@ -82,9 +82,9 @@ export default function LiveListings() {
         <div className="text-center mb-16 animate-fade-in">
           <div className="space-y-4">
             <div className="flex items-center justify-center space-x-3">
-              <Flame className="w-8 h-8 text-[#FF6900]" />
+              <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
               <h2 className="text-5xl font-bold text-gray-900">
-                Live Now!
+                Live Marketplace
               </h2>
             </div>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -96,15 +96,14 @@ export default function LiveListings() {
         <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-16 text-center">
           <div className="space-y-8">
             <div className="w-24 h-24 bg-gradient-to-r from-[#0021A5] to-[#FF6900] rounded-full flex items-center justify-center mx-auto">
-              <div className="text-4xl font-bold text-white">20+</div>
+              <Search className="w-12 h-12 text-white" />
             </div>
             <div className="space-y-4">
               <h3 className="text-4xl font-bold text-gray-900">
-                20+ Live Listings!
+                Active Listings
               </h3>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                We launched 12 hours ago and already have 100+ verified UF students with 20+ active listings! 
-                Join the fastest-growing marketplace at UF.
+                Browse real listings from verified UF students. Find what you need or sell what you don't.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
