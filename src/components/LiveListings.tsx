@@ -84,7 +84,7 @@ export default function LiveListings() {
             <div className="flex items-center justify-center space-x-3">
               <Flame className="w-8 h-8 text-[#FF6900]" />
               <h2 className="text-5xl font-bold text-gray-900">
-                Coming Soon
+                Live Now!
               </h2>
             </div>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -96,54 +96,36 @@ export default function LiveListings() {
         <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-16 text-center">
           <div className="space-y-8">
             <div className="w-24 h-24 bg-gradient-to-r from-[#0021A5] to-[#FF6900] rounded-full flex items-center justify-center mx-auto">
-              <Flame className="w-12 h-12 text-white" />
+              <div className="text-4xl font-bold text-white">20+</div>
             </div>
             <div className="space-y-4">
               <h3 className="text-4xl font-bold text-gray-900">
-                Listings Coming Soon!
+                20+ Live Listings!
               </h3>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                We&apos;re preparing an amazing marketplace experience for UF students. 
-                Be the first to know when we launch in September 2025.
+                We launched 12 hours ago and already have 100+ verified UF students with 20+ active listings! 
+                Join the fastest-growing marketplace at UF.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
-                className="bg-gradient-to-r from-[#0021A5] to-blue-600 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                className="bg-gradient-to-r from-[#FF6900] to-orange-500 hover:from-orange-600 hover:to-orange-600 text-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                 onClick={() => window.open('https://app.gatorex.shop', '_blank')}
               >
-                Join Waitlist
+                Browse Listings
               </Button>
               <Button 
                 variant="outline"
-                className="border-2 border-[#FF6900] text-[#FF6900] hover:bg-[#FF6900] hover:text-white px-8 py-4 text-lg rounded-xl transition-all duration-300 transform hover:-translate-y-1"
+                className="border-2 border-[#0021A5] text-[#0021A5] hover:bg-[#0021A5] hover:text-white px-8 py-4 text-lg rounded-xl transition-all duration-300 transform hover:-translate-y-1"
                 onClick={() => window.open('https://app.gatorex.shop/sell', '_blank')}
               >
-                Be a Seller
+                Start Selling
               </Button>
             </div>
           </div>
         </div>
         
-        <div className="text-center mt-16 animate-fade-in-up">
-          <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-3xl p-12 max-w-4xl mx-auto shadow-lg">
-            <div className="space-y-6">
-              <h3 className="text-3xl font-bold text-gray-900">
-                Can&apos;t Find What You Need?
-              </h3>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                Post a &ldquo;wanted&rdquo; listing and let sellers come to you! Our community of Gators 
-                will help you find exactly what you&apos;re looking for.
-              </p>
-              <Button 
-                className="bg-gradient-to-r from-[#FF6900] to-orange-500 hover:from-orange-600 hover:to-orange-600 text-white px-10 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-                onClick={() => window.open('https://app.gatorex.shop/sell', '_blank')}
-              >
-                Post Your Wants
-              </Button>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   );

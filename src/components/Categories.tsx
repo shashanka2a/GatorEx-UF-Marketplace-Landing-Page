@@ -13,56 +13,32 @@ const categories = [
   {
     icon: BookOpen,
     name: "Textbooks",
-    count: "Coming Soon",
+    count: "8 listings",
     color: "bg-blue-50 text-blue-600",
     gradient: "from-blue-500 to-blue-600",
     description: "Course books, study guides, novels",
-    category: "textbooks"
+    category: "textbooks",
+    active: true
   },
   {
     icon: Sofa,
     name: "Furniture",
-    count: "Coming Soon", 
+    count: "6 listings", 
     color: "bg-orange-50 text-orange-600",
     gradient: "from-orange-500 to-orange-600",
     description: "Desks, chairs, beds, storage",
-    category: "furniture"
+    category: "furniture",
+    active: true
   },
   {
     icon: Laptop,
     name: "Electronics",
-    count: "Coming Soon",
+    count: "4 listings",
     color: "bg-purple-50 text-purple-600",
     gradient: "from-purple-500 to-purple-600", 
     description: "Laptops, phones, tablets, tech",
-    category: "electronics"
-  },
-  {
-    icon: Bike,
-    name: "Bikes & Transport",
-    count: "Coming Soon",
-    color: "bg-green-50 text-green-600",
-    gradient: "from-green-500 to-green-600",
-    description: "Bicycles, scooters, skateboards",
-    category: "bikes"
-  },
-  {
-    icon: Home,
-    name: "Sublets",
-    count: "Coming Soon",
-    color: "bg-red-50 text-red-600",
-    gradient: "from-red-500 to-red-600",
-    description: "Apartments, rooms, housing",
-    category: "sublets"
-  },
-  {
-    icon: Shirt,
-    name: "Clothing & Gear",
-    count: "Coming Soon",
-    color: "bg-pink-50 text-pink-600",
-    gradient: "from-pink-500 to-pink-600",
-    description: "UF apparel, casual wear, formal",
-    category: "clothing"
+    category: "electronics",
+    active: true
   }
 ];
 

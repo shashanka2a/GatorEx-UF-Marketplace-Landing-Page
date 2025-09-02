@@ -18,7 +18,7 @@ export default function Hero() {
           <div className="space-y-6 animate-fade-in">
             <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 text-white/90 text-sm">
               <Shield className="w-4 h-4" />
-              <span>Launching Sep 2025 • UF Students Only • @ufl.edu Verified</span>
+              <span>🎉 LIVE NOW • 100+ Students Verified • 20+ Listings in 12 Hours!</span>
             </div>
             
             <h1 className="text-6xl lg:text-7xl font-bold text-white leading-tight">
@@ -62,6 +62,22 @@ export default function Hero() {
                   </div>
                 </div>
               </div>
+              
+              {/* Social Proof Badges */}
+              <div className="flex flex-wrap justify-center items-center gap-4 mt-4 text-white/80 text-sm">
+                <div className="flex items-center space-x-1">
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                  <span>100+ Students Verified</span>
+                </div>
+                <div className="flex items-center space-x-1">
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                  <span>20+ Listings Posted</span>
+                </div>
+                <div className="flex items-center space-x-1">
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                  <span>12H Since Launch</span>
+                </div>
+              </div>
             </div>
             
             {/* Popular Tags */}
@@ -88,33 +104,33 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up">
             <Button 
-              className="bg-white text-[#0021A5] hover:bg-gray-100 px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
+              className="bg-gradient-to-r from-[#FF6900] to-orange-500 hover:from-orange-600 hover:to-orange-600 text-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
               onClick={() => window.open('https://app.gatorex.shop', '_blank')}
             >
-              Join Waitlist
+              Browse Listings
             </Button>
             <Button 
               variant="outline" 
-              className="border-2 border-white text-[#0021A5] bg-white hover:bg-white hover:text-[#0021A5] px-8 py-4 text-lg rounded-xl transition-all duration-300 transform hover:-translate-y-0.5"
+              className="border-2 border-white text-white hover:bg-white hover:text-[#0021A5] px-8 py-4 text-lg rounded-xl transition-all duration-300 transform hover:-translate-y-0.5"
               onClick={() => window.open('https://app.gatorex.shop/sell', '_blank')}
             >
-              Get Early Access
+              Start Selling
             </Button>
           </div>
           
-          {/* Pre-Launch Indicators */}
+          {/* Live Launch Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 animate-fade-in-up">
             <div className="text-center space-y-2">
-              <div className="text-3xl font-bold text-white">52K+</div>
-              <div className="text-white/80">UF Students Ready</div>
+              <div className="text-3xl font-bold text-white">100+</div>
+              <div className="text-white/80">Students Verified</div>
             </div>
             <div className="text-center space-y-2">
-              <div className="text-3xl font-bold text-white">100%</div>
-              <div className="text-white/80">UF Verified</div>
+              <div className="text-3xl font-bold text-white">20+</div>
+              <div className="text-white/80">Listings Posted</div>
             </div>
             <div className="text-center space-y-2">
-              <div className="text-3xl font-bold text-white">Sep 2025</div>
-              <div className="text-white/80">Launch Date</div>
+              <div className="text-3xl font-bold text-white">12 Hours</div>
+              <div className="text-white/80">Since Launch</div>
             </div>
           </div>
         </div>

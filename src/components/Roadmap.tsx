@@ -6,8 +6,8 @@ const roadmapItems = [
   {
     phase: "Phase 1",
     title: "UF Campus Launch",
-    date: "Sep 2025",
-    status: "upcoming",
+    date: "✅ Launched Today!",
+    status: "completed",
     icon: Rocket,
     color: "bg-[#FF6900]",
     features: [
@@ -21,7 +21,7 @@ const roadmapItems = [
     phase: "Phase 2", 
     title: "Florida Expansion",
     date: "Dec 2025",
-    status: "planned",
+    status: "upcoming",
     icon: TrendingUp,
     color: "bg-[#0021A5]",
     features: [
@@ -55,9 +55,9 @@ export default function Roadmap() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-[#0021A5] to-blue-600 text-white px-6 py-3 rounded-full mb-6 shadow-lg">
-            <Clock className="w-5 h-5" />
-            <span className="font-bold text-lg">LAUNCH TIMELINE 2025-2026</span>
+          <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-green-600 to-[#FF6900] text-white px-6 py-3 rounded-full mb-6 shadow-lg">
+            <CheckCircle className="w-5 h-5" />
+            <span className="font-bold text-lg">🎉 PHASE 1 COMPLETE - EXPANSION 2025-2026</span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Building the Future of 
@@ -85,11 +85,17 @@ export default function Roadmap() {
                       <div className="text-sm font-medium text-gray-500 mb-1">{item.phase}</div>
                       <h3 className="text-2xl font-bold text-gray-900 mb-2">{item.title}</h3>
                       <div className="flex items-center space-x-2">
-                        <Badge className={`${item.status === 'upcoming' ? 'bg-[#FF6900] hover:bg-[#FF6900]' : 'bg-gray-500 hover:bg-gray-500'} text-white`}>
+                        <Badge className={`${item.status === 'completed' ? 'bg-green-600 hover:bg-green-600' : item.status === 'upcoming' ? 'bg-[#FF6900] hover:bg-[#FF6900]' : 'bg-gray-500 hover:bg-gray-500'} text-white`}>
                           {item.date}
                         </Badge>
-                        {item.status === 'upcoming' && (
+                        {item.status === 'completed' && (
                           <Badge className="bg-green-100 text-green-700 hover:bg-green-100">
+                            <CheckCircle className="w-3 h-3 mr-1" />
+                            Live!
+                          </Badge>
+                        )}
+                        {item.status === 'upcoming' && (
+                          <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100">
                             <Zap className="w-3 h-3 mr-1" />
                             Next Up
                           </Badge>
@@ -102,7 +108,9 @@ export default function Roadmap() {
                     <div className="grid md:grid-cols-2 gap-4">
                       {item.features.map((feature, featureIndex) => (
                         <div key={featureIndex} className="flex items-center space-x-3">
-                          {item.status === 'upcoming' ? (
+                          {item.status === 'completed' ? (
+                            <CheckCircle className="w-5 h-5 text-green-600" />
+                          ) : item.status === 'upcoming' ? (
                             <Circle className="w-5 h-5 text-[#FF6900]" />
                           ) : (
                             <Circle className="w-5 h-5 text-gray-400" />

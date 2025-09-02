@@ -6,7 +6,7 @@ import { MessageCircle, QrCode, Zap } from "lucide-react";
 
 export default function InstantSell() {
   return (
-    <section className="py-16 bg-gradient-to-br from-[#FF6900]/5 via-white to-[#0021A5]/5">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in">
           <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-[#FF6900] to-[#0021A5] text-white px-6 py-3 rounded-full mb-6 shadow-lg">
