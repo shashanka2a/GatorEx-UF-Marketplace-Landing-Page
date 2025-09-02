@@ -1,6 +1,60 @@
 import { Button } from "./ui/button";
 import { Search, ArrowRight, Shield, MessageCircle } from "lucide-react";
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { useState, useEffect } from 'react';
+
+function LiveStats() {
+  const [hoursSinceLaunch, setHoursSinceLaunch] = useState(14); // Starting at 14 hours (12 + 2)
+  const [students, setStudents] = useState('100+');
+  const [listings, setListings] = useState('20+');
+  
+  useEffect(() => {
+    const launchTime = new Date('2024-09-02T00:00:00'); // Set your actual launch time
+    
+    const updateStats = () => {
+      const now = new Date();
+      const diffInMs = now.getTime() - launchTime.getTime();
+      const hours = Math.floor(diffInMs / (1000 * 60 * 60));
+      const actualHours = Math.max(14, hours); // Minimum 14 hours
+      
+      setHoursSinceLaunch(actualHours);
+      
+      // Update students and listings based on time milestones
+      if (actualHours >= 36) {
+        setStudents('200+');
+        setListings('50+');
+      } else if (actualHours >= 24) {
+        setStudents('150+');
+        setListings('30+');
+      } else {
+        setStudents('100+');
+        setListings('20+');
+      }
+    };
+    
+    updateStats(); // Initial update
+    const interval = setInterval(updateStats, 60000); // Update every minute
+    
+    return () => clearInterval(interval);
+  }, []);
+  
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 animate-fade-in-up">
+      <div className="text-center space-y-2">
+        <div className="text-3xl font-bold text-white">{students}</div>
+        <div className="text-white/80">Students Verified</div>
+      </div>
+      <div className="text-center space-y-2">
+        <div className="text-3xl font-bold text-white">{listings}</div>
+        <div className="text-white/80">Listings Posted</div>
+      </div>
+      <div className="text-center space-y-2">
+        <div className="text-3xl font-bold text-white">{hoursSinceLaunch}H</div>
+        <div className="text-white/80">Since Launch</div>
+      </div>
+    </div>
+  );
+}
 
 export default function Hero() {
   return (
@@ -104,20 +158,7 @@ export default function Hero() {
           </div>
           
           {/* Live Launch Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 animate-fade-in-up">
-            <div className="text-center space-y-2">
-              <div className="text-3xl font-bold text-white">100+</div>
-              <div className="text-white/80">Students Verified</div>
-            </div>
-            <div className="text-center space-y-2">
-              <div className="text-3xl font-bold text-white">20+</div>
-              <div className="text-white/80">Listings Posted</div>
-            </div>
-            <div className="text-center space-y-2">
-              <div className="text-3xl font-bold text-white">12 Hours</div>
-              <div className="text-white/80">Since Launch</div>
-            </div>
-          </div>
+          <LiveStats />
         </div>
       </div>
     </section>
