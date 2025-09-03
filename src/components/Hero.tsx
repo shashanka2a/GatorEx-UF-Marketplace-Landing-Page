@@ -5,19 +5,19 @@ import { useState, useEffect } from 'react';
 
 function LiveStats() {
   // Fixed stats as requested
-  const students = '100+';
-  const listings = '20+';
-  const hoursSinceLaunch = '12';
+  const students = '150+';
+  const impressions = '2500+';
+  const hoursSinceLaunch = '24';
   
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 animate-fade-in-up">
       <div className="text-center space-y-2">
         <div className="text-3xl font-bold text-white">{students}</div>
-        <div className="text-white/80">Students Verified</div>
+        <div className="text-white/80">Verified Users</div>
       </div>
       <div className="text-center space-y-2">
-        <div className="text-3xl font-bold text-white">{listings}</div>
-        <div className="text-white/80">Listings Posted</div>
+        <div className="text-3xl font-bold text-white">{impressions}</div>
+        <div className="text-white/80">Total Impressions</div>
       </div>
       <div className="text-center space-y-2">
         <div className="text-3xl font-bold text-white">{hoursSinceLaunch}H</div>
@@ -130,6 +130,22 @@ export default function Hero() {
           
           {/* Live Launch Stats */}
           <LiveStats />
+          
+          {/* Giveaway Notice */}
+          <div className="animate-fade-in-up">
+            <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-orange-500/20 to-yellow-500/20 backdrop-blur-sm rounded-full px-6 py-3 text-white/95 text-sm border border-orange-300/30">
+              <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
+              <span>
+                Follow three simple steps to whitelist yourself for giveaway at{' '}
+                <button 
+                  onClick={() => window.open('https://app.gatorex.shop/giveaway', '_blank')}
+                  className="underline hover:text-yellow-300 transition-colors"
+                >
+                  app.gatorex.shop/giveaway
+                </button>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
