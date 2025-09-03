@@ -6,7 +6,7 @@ const roadmapItems = [
   {
     phase: "Phase 1",
     title: "UF Campus Launch",
-    date: "✅ Launched Today!",
+    date: "✅ Launched Sep 1 2025",
     status: "completed",
     icon: Rocket,
     color: "bg-[#FF6900]",
