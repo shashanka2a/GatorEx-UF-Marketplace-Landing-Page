@@ -131,15 +131,15 @@ export default function Hero() {
           {/* Live Launch Stats */}
           <LiveStats />
           
-          {/* Giveaway Notice */}
+          {/* iPhone Giveaway Notice */}
           <div className="animate-fade-in-up">
             <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-orange-500/20 to-yellow-500/20 backdrop-blur-sm rounded-full px-6 py-3 text-white/95 text-sm border border-orange-300/30">
               <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
               <span>
-                Follow three simple steps to whitelist yourself for giveaway at{' '}
+                🎁 iPhone Giveaway! Complete three steps to enter our launch celebration at{' '}
                 <button 
                   onClick={() => window.open('https://app.gatorex.shop/giveaway', '_blank')}
-                  className="underline hover:text-yellow-300 transition-colors"
+                  className="underline hover:text-yellow-300 transition-colors font-medium"
                 >
                   app.gatorex.shop/giveaway
                 </button>
