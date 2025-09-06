@@ -109,14 +109,14 @@ export default function LiveListings() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 className="bg-gradient-to-r from-[#FF6900] to-orange-500 hover:from-orange-600 hover:to-orange-600 text-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-                onClick={() => window.open('https://app.gatorex.shop', '_blank')}
+                onClick={() => window.open('https://gatorex.app', '_blank')}
               >
                 Browse Listings
               </Button>
               <Button 
                 variant="outline"
                 className="border-2 border-[#0021A5] text-[#0021A5] hover:bg-[#0021A5] hover:text-white px-8 py-4 text-lg rounded-xl transition-all duration-300 transform hover:-translate-y-1"
-                onClick={() => window.open('https://app.gatorex.shop/sell', '_blank')}
+                onClick={() => window.open('https://gatorex.app/sell', '_blank')}
               >
                 Start Selling
               </Button>

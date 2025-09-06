@@ -63,7 +63,7 @@ export default function Categories() {
                 key={category.name} 
                 className="group p-8 hover:shadow-2xl transition-all duration-500 cursor-pointer border-0 bg-white hover:bg-gradient-to-br hover:from-white hover:to-gray-50 animate-fade-in-up relative overflow-hidden"
                 style={{ animationDelay: `${index * 100}ms` }}
-                onClick={() => window.open(`https://app.gatorex.shop?category=${category.category}`, '_blank')}
+                onClick={() => window.open(`https://gatorex.app?category=${category.category}`, '_blank')}
               >
                 {/* Hover Gradient Overlay */}
                 <div className={`absolute inset-0 bg-gradient-to-r ${category.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
@@ -96,7 +96,7 @@ export default function Categories() {
         <div className="text-center mt-16 animate-fade-in-up">
           <Button 
             className="bg-gradient-to-r from-[#0021A5] to-blue-600 hover:from-blue-700 hover:to-blue-800 text-white px-10 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-            onClick={() => window.open('https://app.gatorex.shop', '_blank')}
+            onClick={() => window.open('https://gatorex.app', '_blank')}
           >
             Explore All Categories
           </Button>

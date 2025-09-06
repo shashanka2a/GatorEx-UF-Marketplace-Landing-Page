@@ -72,7 +72,7 @@ export default function InstantSell() {
                   <div className="text-center">
                     <span className="text-gray-500 text-sm">or </span>
                     <a 
-                      href="https://app.gatorex.shop" 
+                      href="https://gatorex.app" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-[#0021A5] hover:text-[#FF6900] font-medium text-sm transition-colors"

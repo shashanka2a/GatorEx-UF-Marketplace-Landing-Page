@@ -15,8 +15,8 @@ export default function Header() {
           </div>
           
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="https://app.gatorex.shop" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#FF6900] transition-colors">Shop</a>
-            <a href="https://app.gatorex.shop/sell" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#FF6900] transition-colors">Sell</a>
+            <a href="https://gatorex.app" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#FF6900] transition-colors">Shop</a>
+            <a href="https://gatorex.app/sell" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#FF6900] transition-colors">Sell</a>
             <a href="#categories" className="text-gray-600 hover:text-[#FF6900] transition-colors">Categories</a>
             <a href="#how-it-works" className="text-gray-600 hover:text-[#FF6900] transition-colors">How it Works</a>
           </nav>
@@ -32,7 +32,7 @@ export default function Header() {
           
           <div 
             className="hidden md:flex items-center space-x-2 bg-gray-50 rounded-lg px-3 py-2 min-w-[300px] cursor-pointer hover:bg-gray-100 transition-colors"
-            onClick={() => window.open('https://app.gatorex.shop', '_blank')}
+            onClick={() => window.open('https://gatorex.app', '_blank')}
           >
             <Search className="w-4 h-4 text-gray-400" />
             <input 
@@ -46,14 +46,14 @@ export default function Header() {
           <Button 
             variant="outline" 
             className="hidden md:flex"
-            onClick={() => window.open('https://app.gatorex.shop/me', '_blank')}
+            onClick={() => window.open('https://gatorex.app/me', '_blank')}
           >
             Sign In
           </Button>
           
           <Button 
             className="bg-[#FF6900] hover:bg-[#e55a00] text-white"
-            onClick={() => window.open('https://app.gatorex.shop/sell', '_blank')}
+            onClick={() => window.open('https://gatorex.app/sell', '_blank')}
           >
             Post Listing
           </Button>

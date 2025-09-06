@@ -80,7 +80,7 @@ export default function Hero() {
                     </div>
                     <Button 
                       className="bg-gradient-to-r from-[#FF6900] to-orange-500 hover:from-orange-600 hover:to-orange-600 text-white px-8 py-5 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
-                      onClick={() => window.open('https://app.gatorex.shop', '_blank')}
+                      onClick={() => window.open('https://gatorex.app', '_blank')}
                     >
                       Search <ArrowRight className="ml-2 w-5 h-5" />
                     </Button>
@@ -103,7 +103,7 @@ export default function Hero() {
                 <button 
                   key={tag.name} 
                   className="px-4 py-2 bg-white/10 backdrop-blur-sm hover:bg-white/20 rounded-full text-sm text-white transition-all duration-300 hover:scale-105"
-                  onClick={() => window.open(`https://app.gatorex.shop?category=${tag.category}`, '_blank')}
+                  onClick={() => window.open(`https://gatorex.app?category=${tag.category}`, '_blank')}
                 >
                   {tag.name}
                 </button>
@@ -115,14 +115,14 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up">
             <Button 
               className="bg-gradient-to-r from-[#FF6900] to-orange-500 hover:from-orange-600 hover:to-orange-600 text-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
-              onClick={() => window.open('https://app.gatorex.shop', '_blank')}
+              onClick={() => window.open('https://gatorex.app', '_blank')}
             >
               Browse Listings
             </Button>
             <Button 
               variant="outline" 
               className="border-2 border-white text-white hover:bg-white hover:text-[#0021A5] px-8 py-4 text-lg rounded-xl transition-all duration-300 transform hover:-translate-y-0.5"
-              onClick={() => window.open('https://app.gatorex.shop/sell', '_blank')}
+              onClick={() => window.open('https://gatorex.app/sell', '_blank')}
             >
               Start Selling
             </Button>
@@ -138,10 +138,10 @@ export default function Hero() {
               <span>
                 🎁 iPhone Giveaway! Complete three steps to enter our launch celebration at{' '}
                 <button 
-                  onClick={() => window.open('https://app.gatorex.shop/giveaway', '_blank')}
+                  onClick={() => window.open('https://gatorex.app/giveaway', '_blank')}
                   className="underline hover:text-yellow-300 transition-colors font-medium"
                 >
-                  app.gatorex.shop/giveaway
+                  gatorex.app/giveaway
                 </button>
               </span>
             </div>
