@@ -57,40 +57,45 @@ export default function InstantSell() {
                 {/* GatorBot AI Illustration */}
                 <div className="w-64 h-64 bg-white rounded-2xl flex items-center justify-center relative">
                   <div className="relative">
+                    {/* Speech Bubble Outline */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-32 h-20 border-2 border-gray-200 rounded-2xl relative">
+                        {/* Speech bubble tail */}
+                        <div className="absolute -bottom-2 left-8 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-gray-200"></div>
+                      </div>
+                    </div>
+                    
                     {/* Main GatorBot */}
-                    <div className="relative">
-                      {/* Simple Rounded Head */}
-                      <div className="w-24 h-24 bg-[#0021A5] rounded-3xl relative shadow-lg">
-                        {/* Friendly Eyes */}
-                        <div className="absolute top-6 left-4 w-4 h-4 bg-white rounded-full flex items-center justify-center">
-                          <div className="w-2 h-2 bg-[#0021A5] rounded-full animate-pulse"></div>
+                    <div className="relative z-10">
+                      {/* Soft Squircle Head */}
+                      <div className="w-20 h-20 bg-gray-100 rounded-2xl relative shadow-sm border-2 border-green-200">
+                        {/* Friendly Eyes with Pupils */}
+                        <div className="absolute top-5 left-3 w-3 h-3 bg-white rounded-full flex items-center justify-center">
+                          <div className="w-1.5 h-1.5 bg-[#0021A5] rounded-full animate-pulse"></div>
                         </div>
-                        <div className="absolute top-6 right-4 w-4 h-4 bg-white rounded-full flex items-center justify-center">
-                          <div className="w-2 h-2 bg-[#0021A5] rounded-full animate-pulse"></div>
+                        <div className="absolute top-5 right-3 w-3 h-3 bg-white rounded-full flex items-center justify-center">
+                          <div className="w-1.5 h-1.5 bg-[#0021A5] rounded-full animate-pulse"></div>
                         </div>
                         
-                        {/* Subtle Smile */}
-                        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-8 h-2 border-b-2 border-white rounded-full"></div>
+                        {/* Tiny Smile Line */}
+                        <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 w-6 h-1 border-b border-[#0021A5] rounded-full"></div>
                         
-                        {/* Simple Body */}
-                        <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-16 bg-[#0021A5] rounded-2xl"></div>
+                        {/* Lightning Badge on Chest */}
+                        <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-5 h-5 bg-[#FF6900] rounded-full flex items-center justify-center shadow-sm">
+                          <Zap className="w-2.5 h-2.5 text-white" />
+                        </div>
                       </div>
                       
                       {/* Chat Bubble Icon - Subtle */}
-                      <div className="absolute -top-1 -right-1 w-8 h-8 bg-[#FF6900] rounded-full flex items-center justify-center shadow-md">
-                        <MessageCircle className="w-4 h-4 text-white" />
-                      </div>
-                      
-                      {/* Lightning Icon - Subtle */}
-                      <div className="absolute -bottom-1 -left-1 w-7 h-7 bg-[#FF6900] rounded-full flex items-center justify-center shadow-md">
-                        <Zap className="w-3 h-3 text-white" />
+                      <div className="absolute -top-2 -right-2 w-6 h-6 bg-[#0021A5] rounded-full flex items-center justify-center shadow-sm">
+                        <MessageCircle className="w-3 h-3 text-white" />
                       </div>
                       
                       {/* Typing Dots Animation */}
-                      <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-1">
-                        <div className="w-1.5 h-1.5 bg-[#FF6900] rounded-full animate-bounce"></div>
-                        <div className="w-1.5 h-1.5 bg-[#FF6900] rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
-                        <div className="w-1.5 h-1.5 bg-[#FF6900] rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
+                      <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-1">
+                        <div className="w-1 h-1 bg-[#FF6900] rounded-full animate-bounce"></div>
+                        <div className="w-1 h-1 bg-[#FF6900] rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
+                        <div className="w-1 h-1 bg-[#FF6900] rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
                       </div>
                     </div>
                   </div>
