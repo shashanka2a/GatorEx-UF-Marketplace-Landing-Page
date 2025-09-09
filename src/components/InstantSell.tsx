@@ -55,50 +55,42 @@ export default function InstantSell() {
             <Card className="bg-white p-8 shadow-xl border-0 text-center">
               <div className="space-y-6">
                 {/* GatorBot AI Illustration */}
-                <div className="w-64 h-64 bg-gradient-to-br from-orange-50 to-blue-50 rounded-2xl flex items-center justify-center relative overflow-hidden">
+                <div className="w-64 h-64 bg-white rounded-2xl flex items-center justify-center relative">
                   <div className="relative">
-                    {/* GatorBot Body */}
+                    {/* Main GatorBot */}
                     <div className="relative">
-                      {/* Main Robot Body */}
-                      <div className="w-32 h-24 bg-gradient-to-b from-[#0021A5] to-[#0021A5]/80 rounded-2xl relative shadow-lg">
-                        {/* Gator Head/Helmet */}
-                        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-20 h-16 bg-gradient-to-b from-[#FF6900] to-orange-600 rounded-2xl shadow-md">
-                          {/* Gator Eyes */}
-                          <div className="absolute top-3 left-3 w-4 h-4 bg-white rounded-full flex items-center justify-center">
-                            <div className="w-2 h-2 bg-[#0021A5] rounded-full animate-pulse"></div>
-                          </div>
-                          <div className="absolute top-3 right-3 w-4 h-4 bg-white rounded-full flex items-center justify-center">
-                            <div className="w-2 h-2 bg-[#0021A5] rounded-full animate-pulse"></div>
-                          </div>
-                          {/* Gator Snout */}
-                          <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-8 h-3 bg-orange-500 rounded-full"></div>
+                      {/* Simple Rounded Head */}
+                      <div className="w-24 h-24 bg-[#0021A5] rounded-3xl relative shadow-lg">
+                        {/* Friendly Eyes */}
+                        <div className="absolute top-6 left-4 w-4 h-4 bg-white rounded-full flex items-center justify-center">
+                          <div className="w-2 h-2 bg-[#0021A5] rounded-full animate-pulse"></div>
+                        </div>
+                        <div className="absolute top-6 right-4 w-4 h-4 bg-white rounded-full flex items-center justify-center">
+                          <div className="w-2 h-2 bg-[#0021A5] rounded-full animate-pulse"></div>
                         </div>
                         
-                        {/* Robot Screen */}
-                        <div className="absolute top-2 left-2 right-2 h-8 bg-black/20 rounded-lg flex items-center justify-center">
-                          <div className="flex space-x-1">
-                            <div className="w-1 h-1 bg-green-400 rounded-full animate-pulse"></div>
-                            <div className="w-1 h-1 bg-green-400 rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
-                            <div className="w-1 h-1 bg-green-400 rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
-                          </div>
-                        </div>
+                        {/* Subtle Smile */}
+                        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-8 h-2 border-b-2 border-white rounded-full"></div>
                         
-                        {/* UF Logo on Chest */}
-                        <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                          <div className="text-[#0021A5] font-bold text-xs">UF</div>
-                        </div>
-                        
-                        {/* Robot Arms */}
-                        <div className="absolute top-4 -left-2 w-4 h-8 bg-gradient-to-b from-[#FF6900] to-orange-600 rounded-full"></div>
-                        <div className="absolute top-4 -right-2 w-4 h-8 bg-gradient-to-b from-[#FF6900] to-orange-600 rounded-full"></div>
+                        {/* Simple Body */}
+                        <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-16 bg-[#0021A5] rounded-2xl"></div>
                       </div>
                       
-                      {/* Floating Elements */}
-                      <div className="absolute -top-2 -right-2 w-6 h-6 bg-[#FF6900] rounded-full flex items-center justify-center animate-bounce">
-                        <MessageCircle className="w-3 h-3 text-white" />
+                      {/* Chat Bubble Icon - Subtle */}
+                      <div className="absolute -top-1 -right-1 w-8 h-8 bg-[#FF6900] rounded-full flex items-center justify-center shadow-md">
+                        <MessageCircle className="w-4 h-4 text-white" />
                       </div>
-                      <div className="absolute -bottom-2 -left-2 w-5 h-5 bg-[#0021A5] rounded-full flex items-center justify-center animate-bounce" style={{animationDelay: '0.5s'}}>
-                        <Zap className="w-2.5 h-2.5 text-white" />
+                      
+                      {/* Lightning Icon - Subtle */}
+                      <div className="absolute -bottom-1 -left-1 w-7 h-7 bg-[#FF6900] rounded-full flex items-center justify-center shadow-md">
+                        <Zap className="w-3 h-3 text-white" />
+                      </div>
+                      
+                      {/* Typing Dots Animation */}
+                      <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-1">
+                        <div className="w-1.5 h-1.5 bg-[#FF6900] rounded-full animate-bounce"></div>
+                        <div className="w-1.5 h-1.5 bg-[#FF6900] rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
+                        <div className="w-1.5 h-1.5 bg-[#FF6900] rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
                       </div>
                     </div>
                   </div>
