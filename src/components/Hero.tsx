@@ -5,9 +5,9 @@ import { useState, useEffect } from 'react';
 
 function LiveStats() {
   // Fixed stats as requested
-  const students = '150+';
-  const impressions = '2500+';
-  const hoursSinceLaunch = '24';
+  const students = '250+';
+  const impressions = '5000+';
+  const hoursSinceLaunch = '1 week';
   
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 animate-fade-in-up">
@@ -20,7 +20,7 @@ function LiveStats() {
         <div className="text-white/80">Total Impressions</div>
       </div>
       <div className="text-center space-y-2">
-        <div className="text-3xl font-bold text-white">{hoursSinceLaunch}H</div>
+        <div className="text-3xl font-bold text-white">{hoursSinceLaunch}</div>
         <div className="text-white/80">Since Launch</div>
       </div>
     </div>
