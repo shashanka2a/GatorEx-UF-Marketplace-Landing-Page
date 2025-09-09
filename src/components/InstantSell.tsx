@@ -14,10 +14,10 @@ export default function InstantSell() {
             <span className="font-bold text-lg">AI INSTANT SELLING</span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-            Sell in <span className="bg-gradient-to-r from-[#FF6900] to-[#0021A5] bg-clip-text text-transparent">Under 1 Minute</span> via AI Chat
+            Sell in <span className="bg-gradient-to-r from-[#FF6900] to-[#0021A5] bg-clip-text text-transparent">Under 1 Minute</span> via GatorBot
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Skip the hassle. Just chat with our AI and get listed instantly! Our intelligent chatbot creates your listing in under 1 minute.
+            Skip the hassle. Just chat with GatorBot and get listed instantly! Our intelligent AI assistant creates your listing in under 1 minute.
           </p>
         </div>
 
@@ -54,19 +54,51 @@ export default function InstantSell() {
           <div className="flex justify-center animate-fade-in-up">
             <Card className="bg-white p-8 shadow-xl border-0 text-center">
               <div className="space-y-6">
-                {/* AI Chatbot Illustration */}
+                {/* GatorBot AI Illustration */}
                 <div className="w-64 h-64 bg-gradient-to-br from-orange-50 to-blue-50 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                  {/* Chat Bubble Icon */}
                   <div className="relative">
-                    <div className="w-24 h-20 bg-orange-200 border-2 border-orange-300 rounded-2xl flex items-center justify-center relative">
-                      {/* Chat bubble tail */}
-                      <div className="absolute -bottom-2 left-6 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-orange-300"></div>
-                      <div className="absolute -bottom-1 left-7 w-0 h-0 border-l-6 border-r-6 border-t-6 border-l-transparent border-r-transparent border-t-orange-200"></div>
+                    {/* GatorBot Body */}
+                    <div className="relative">
+                      {/* Main Robot Body */}
+                      <div className="w-32 h-24 bg-gradient-to-b from-[#0021A5] to-[#0021A5]/80 rounded-2xl relative shadow-lg">
+                        {/* Gator Head/Helmet */}
+                        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-20 h-16 bg-gradient-to-b from-[#FF6900] to-orange-600 rounded-2xl shadow-md">
+                          {/* Gator Eyes */}
+                          <div className="absolute top-3 left-3 w-4 h-4 bg-white rounded-full flex items-center justify-center">
+                            <div className="w-2 h-2 bg-[#0021A5] rounded-full animate-pulse"></div>
+                          </div>
+                          <div className="absolute top-3 right-3 w-4 h-4 bg-white rounded-full flex items-center justify-center">
+                            <div className="w-2 h-2 bg-[#0021A5] rounded-full animate-pulse"></div>
+                          </div>
+                          {/* Gator Snout */}
+                          <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-8 h-3 bg-orange-500 rounded-full"></div>
+                        </div>
+                        
+                        {/* Robot Screen */}
+                        <div className="absolute top-2 left-2 right-2 h-8 bg-black/20 rounded-lg flex items-center justify-center">
+                          <div className="flex space-x-1">
+                            <div className="w-1 h-1 bg-green-400 rounded-full animate-pulse"></div>
+                            <div className="w-1 h-1 bg-green-400 rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
+                            <div className="w-1 h-1 bg-green-400 rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
+                          </div>
+                        </div>
+                        
+                        {/* UF Logo on Chest */}
+                        <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-white rounded-full flex items-center justify-center">
+                          <div className="text-[#0021A5] font-bold text-xs">UF</div>
+                        </div>
+                        
+                        {/* Robot Arms */}
+                        <div className="absolute top-4 -left-2 w-4 h-8 bg-gradient-to-b from-[#FF6900] to-orange-600 rounded-full"></div>
+                        <div className="absolute top-4 -right-2 w-4 h-8 bg-gradient-to-b from-[#FF6900] to-orange-600 rounded-full"></div>
+                      </div>
                       
-                      {/* Text inside chat bubble */}
-                      <div className="text-center">
-                        <div className="text-sm font-bold text-gray-700 mb-0.5">AI Chatbot</div>
-                        <div className="text-xs text-gray-600">List in under 1 min</div>
+                      {/* Floating Elements */}
+                      <div className="absolute -top-2 -right-2 w-6 h-6 bg-[#FF6900] rounded-full flex items-center justify-center animate-bounce">
+                        <MessageCircle className="w-3 h-3 text-white" />
+                      </div>
+                      <div className="absolute -bottom-2 -left-2 w-5 h-5 bg-[#0021A5] rounded-full flex items-center justify-center animate-bounce" style={{animationDelay: '0.5s'}}>
+                        <Zap className="w-2.5 h-2.5 text-white" />
                       </div>
                     </div>
                   </div>
@@ -78,7 +110,7 @@ export default function InstantSell() {
                     onClick={() => window.open('https://gatorex.app/sell', '_blank')}
                   >
                     <MessageCircle className="w-5 h-5 mr-2" />
-                    Start AI Chat
+                    Chat with GatorBot
                   </Button>
                   <div className="text-center">
                     <span className="text-gray-500 text-sm">or </span>
