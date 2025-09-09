@@ -54,18 +54,29 @@ export default function InstantSell() {
           <div className="flex justify-center animate-fade-in-up">
             <Card className="bg-white p-8 shadow-xl border-0 text-center">
               <div className="space-y-6">
-                <div className="w-64 h-64 bg-gradient-to-br from-[#FF6900]/10 to-[#0021A5]/10 rounded-2xl flex items-center justify-center relative overflow-hidden border-2 border-[#FF6900]/20">
-                  <MessageCircle className="w-32 h-32 text-[#FF6900]/30" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="text-lg font-bold text-gray-700 mb-1">AI Chatbot</div>
-                      <div className="text-sm text-gray-500">List in under 1 min</div>
+                {/* AI Chatbot Illustration */}
+                <div className="w-64 h-64 bg-gradient-to-br from-orange-50 to-blue-50 rounded-2xl flex items-center justify-center relative overflow-hidden">
+                  {/* Chat Bubble Icon */}
+                  <div className="relative">
+                    <div className="w-24 h-20 bg-orange-200 border-2 border-orange-300 rounded-2xl flex items-center justify-center relative">
+                      {/* Chat bubble tail */}
+                      <div className="absolute -bottom-2 left-6 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-orange-300"></div>
+                      <div className="absolute -bottom-1 left-7 w-0 h-0 border-l-6 border-r-6 border-t-6 border-l-transparent border-r-transparent border-t-orange-200"></div>
+                      
+                      {/* Text inside chat bubble */}
+                      <div className="text-center">
+                        <div className="text-sm font-bold text-gray-700 mb-0.5">AI Chatbot</div>
+                        <div className="text-xs text-gray-600">List in under 1 min</div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 
                 <div className="space-y-3">
-                  <Button className="bg-gradient-to-r from-[#FF6900] to-[#0021A5] hover:from-orange-600 hover:to-blue-700 text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 w-full">
+                  <Button 
+                    className="bg-gradient-to-r from-[#FF6900] to-[#0021A5] hover:from-orange-600 hover:to-blue-700 text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 w-full"
+                    onClick={() => window.open('https://gatorex.app/sell', '_blank')}
+                  >
                     <MessageCircle className="w-5 h-5 mr-2" />
                     Start AI Chat
                   </Button>
@@ -75,7 +86,7 @@ export default function InstantSell() {
                       href="https://gatorex.app" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-[#0021A5] hover:text-[#FF6900] font-medium text-sm transition-colors"
+                      className="text-[#0021A5] hover:text-[#FF6900] font-medium text-sm transition-colors underline"
                     >
                       browse online
                     </a>
