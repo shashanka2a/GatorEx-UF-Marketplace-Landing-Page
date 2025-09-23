@@ -149,7 +149,7 @@ export default function BlogSection() {
               More Projects from Our Team
             </h3>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Explore other innovative solutions we've built for students and developers
+              Explore other innovative solutions we&apos;ve built for students and developers
             </p>
           </div>
           

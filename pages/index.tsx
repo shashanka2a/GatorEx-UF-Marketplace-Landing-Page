@@ -21,7 +21,7 @@ export default function Home() {
         <meta property="og:description" content="The official student marketplace for UF students. Buy and sell furniture, electronics, textbooks, and more safely." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://gatorex.shop" />
-        <meta property="og:image" content="https://gatorex.shop/logo.png" />
+        <meta property="og:image" content="https://gatorex.shop/gator-icon.svg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="GatorEx Shop – Student Marketplace for Students" />
         <meta name="twitter:description" content="The official student marketplace for UF students. Buy and sell furniture, electronics, textbooks, and more safely." />
@@ -35,7 +35,7 @@ export default function Home() {
               "name": "GatorEx Shop",
               "alternateName": "GatorEx Student Marketplace",
               "url": "https://gatorex.shop",
-              "logo": "https://gatorex.shop/logo.png",
+              "logo": "https://gatorex.shop/gator-icon.svg",
               "description": "Official student marketplace for UF students to buy and sell furniture, electronics, textbooks, bikes, and more.",
               "foundingDate": "2024",
               "founder": {

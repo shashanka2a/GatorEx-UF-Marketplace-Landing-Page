@@ -43,7 +43,7 @@ export default function Testimonials() {
             <span className="bg-gradient-to-r from-[#FF6900] to-[#0021A5] bg-clip-text text-transparent"> Saying</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Real feedback from UF students who've experienced the GatorEx difference
+            Real feedback from UF students who&apos;ve experienced the GatorEx difference
           </p>
         </div>
 
@@ -70,7 +70,7 @@ export default function Testimonials() {
                 
                 {/* Content */}
                 <blockquote className="text-gray-700 leading-relaxed text-lg">
-                  "{testimonial.content}"
+                  &ldquo;{testimonial.content}&rdquo;
                 </blockquote>
                 
                 {/* Author */}

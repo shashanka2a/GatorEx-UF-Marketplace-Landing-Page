@@ -5,10 +5,9 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta charSet="UTF-8" />
+        <link rel="icon" href="/gator-icon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-        <link rel="icon" type="image/png" href="/logo.png" />
-        <link rel="apple-touch-icon" href="/logo.png" />
+        <link rel="apple-touch-icon" href="/gator-icon.svg" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="description" content="GatorEx - The trusted marketplace connecting UF students for furniture, textbooks, electronics, bikes, and subletting opportunities." />
         <meta name="keywords" content="UF, University of Florida, marketplace, students, furniture, textbooks, electronics, bikes, sublets" />
