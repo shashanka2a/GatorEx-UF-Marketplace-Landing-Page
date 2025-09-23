@@ -29,22 +29,22 @@ const blogPosts = [
 
 const relatedProjects = [
   {
+    name: "Vybr",
+    description: "Discover your dream housing",
+    url: "https://vybr.club",
+    icon: "🏠"
+  },
+  {
     name: "Tribzy",
-    description: "AI-powered social media management platform",
+    description: "Never miss campus events",
     url: "https://tribzy.com",
-    icon: "🚀"
+    icon: "🎉"
   },
   {
-    name: "QRBee",
-    description: "Smart QR code generator with analytics",
-    url: "https://qrbee.app",
-    icon: "🍯"
-  },
-  {
-    name: "HackHire",
-    description: "Developer hiring platform for startups",
-    url: "https://hackhire.io",
-    icon: "💻"
+    name: "Rydify",
+    description: "Split ride costs effortlessly",
+    url: "https://rydify.co",
+    icon: "🚗"
   }
 ];
 
