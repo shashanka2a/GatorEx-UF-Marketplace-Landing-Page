@@ -47,9 +47,9 @@ export default function Hero() {
             </div>
             
             <h1 className="text-6xl lg:text-7xl font-bold text-white leading-tight">
-              Buy. Sell. <br />
+              GatorEx Student Marketplace – <br />
               <span className="bg-gradient-to-r from-[#FF6900] to-orange-300 bg-clip-text text-transparent">
-                Go Gators.
+                Buy & Sell Furniture, Electronics & Books
               </span>
             </h1>
             
