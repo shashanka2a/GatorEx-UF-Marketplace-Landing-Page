@@ -2,8 +2,6 @@ import Head from 'next/head'
 import Header from '../src/components/Header'
 import Hero from '../src/components/Hero'
 import InstantSell from '../src/components/InstantSell'
-import Categories from '../src/components/Categories'
-import LiveListings from '../src/components/LiveListings'
 import Testimonials from '../src/components/Testimonials'
 import BlogSection from '../src/components/BlogSection'
 import Roadmap from '../src/components/Roadmap'
@@ -21,7 +19,7 @@ export default function Home() {
         <meta property="og:description" content="The official student marketplace for UF students. Buy and sell furniture, electronics, textbooks, and more safely." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://gatorex.shop" />
-        <meta property="og:image" content="https://gatorex.shop/gator-icon.svg" />
+        <meta property="og:image" content="https://gatorex.shop/logo.svg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="GatorEx Shop – Student Marketplace for Students" />
         <meta name="twitter:description" content="The official student marketplace for UF students. Buy and sell furniture, electronics, textbooks, and more safely." />
@@ -35,7 +33,7 @@ export default function Home() {
               "name": "GatorEx Shop",
               "alternateName": "GatorEx Student Marketplace",
               "url": "https://gatorex.shop",
-              "logo": "https://gatorex.shop/gator-icon.svg",
+              "logo": "https://gatorex.shop/logo.svg",
               "description": "Official student marketplace for UF students to buy and sell furniture, electronics, textbooks, bikes, and more.",
               "foundingDate": "2024",
               "founder": {
@@ -122,8 +120,6 @@ export default function Home() {
         <Header />
         <Hero />
         <InstantSell />
-        <Categories />
-        <LiveListings />
         <Testimonials />
         <BlogSection />
         <Roadmap />
