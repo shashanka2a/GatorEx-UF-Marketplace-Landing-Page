@@ -89,10 +89,13 @@ export default function BlogSection() {
                   </p>
                   
                   <div className="flex items-center space-x-4">
-                    <Button className="bg-gradient-to-r from-[#FF6900] to-[#0021A5] hover:from-orange-600 hover:to-blue-700 text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                      Read Full Article
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </Button>
+                  <Button 
+                    className="bg-gradient-to-r from-[#FF6900] to-[#0021A5] hover:from-orange-600 hover:to-blue-700 text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                    onClick={() => window.open('https://medium.com/@jagannathamshashank/why-the-student-commerce-problem-remains-unsolved-eba65c0bab78', '_blank')}
+                  >
+                    Read Full Article
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Button>
                     <span className="text-sm text-gray-500">Published Dec 19, 2024</span>
                   </div>
                 </div>
@@ -133,7 +136,11 @@ export default function BlogSection() {
                   {post.excerpt}
                 </p>
                 
-                <Button variant="outline" className="border-[#0021A5] text-[#0021A5] hover:bg-[#0021A5] hover:text-white transition-all duration-300">
+                <Button 
+                  variant="outline" 
+                  className="border-[#0021A5] text-[#0021A5] hover:bg-[#0021A5] hover:text-white transition-all duration-300"
+                  onClick={() => window.open('https://medium.com/@jagannathamshashank/why-the-student-commerce-problem-remains-unsolved-eba65c0bab78', '_blank')}
+                >
                   Read More
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
