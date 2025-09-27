@@ -7,7 +7,7 @@ function LiveStats() {
   // Fixed stats as requested
   const students = '250+';
   const impressions = '5000+';
-  const hoursSinceLaunch = '1 week';
+  const hoursSinceLaunch = '1 month';
   
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 animate-fade-in-up">
