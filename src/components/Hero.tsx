@@ -49,7 +49,7 @@ export default function Hero() {
             <h1 className="text-6xl lg:text-7xl font-bold text-white leading-tight">
               Buy. Sell. <br />
               <span className="bg-gradient-to-r from-[#FF6900] to-orange-300 bg-clip-text text-transparent">
-                Go Gators.
+                Go Gatorz.
               </span>
             </h1>
             
