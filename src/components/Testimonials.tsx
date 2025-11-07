@@ -52,7 +52,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <Card 
               key={testimonial.id} 
-              className="p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300 border-0 hover:border-2 hover:border-[#FF6900]/20 transform hover:-translate-y-1 animate-fade-in-up"
+              className="p-8 bg-white shadow-lg border-0 animate-fade-in-up"
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <div className="space-y-6">

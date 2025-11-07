@@ -119,7 +119,12 @@ export default function BlogSection() {
         {/* Other Blog Posts */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {blogPosts.slice(1).map((post, index) => (
-            <Card key={post.id} className="p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300 border-0 hover:border-2 hover:border-[#FF6900]/20 transform hover:-translate-y-1 animate-fade-in-up" style={{ animationDelay: `${index * 200}ms` }}>
+            <Card 
+              key={post.id} 
+              className="p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300 border-0 hover:border-2 hover:border-[#FF6900]/20 transform hover:-translate-y-1 animate-fade-in-up cursor-pointer" 
+              style={{ animationDelay: `${index * 200}ms` }}
+              onClick={() => window.open('https://medium.com/@jagannathamshashank/why-the-student-commerce-problem-remains-unsolved-eba65c0bab78', '_blank')}
+            >
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
@@ -139,7 +144,10 @@ export default function BlogSection() {
                 <Button 
                   variant="outline" 
                   className="border-[#0021A5] text-[#0021A5] hover:bg-[#0021A5] hover:text-white transition-all duration-300"
-                  onClick={() => window.open('https://medium.com/@jagannathamshashank/why-the-student-commerce-problem-remains-unsolved-eba65c0bab78', '_blank')}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open('https://medium.com/@jagannathamshashank/why-the-student-commerce-problem-remains-unsolved-eba65c0bab78', '_blank');
+                  }}
                 >
                   Read More
                   <ArrowRight className="w-4 h-4 ml-2" />
@@ -162,7 +170,11 @@ export default function BlogSection() {
           
           <div className="grid md:grid-cols-3 gap-8">
             {relatedProjects.map((project, index) => (
-              <Card key={project.name} className="p-6 bg-gradient-to-br from-gray-50 to-white hover:from-[#FF6900]/5 hover:to-[#0021A5]/5 transition-all duration-300 border-0 hover:shadow-lg transform hover:-translate-y-1">
+              <Card 
+                key={project.name} 
+                className="p-6 bg-gradient-to-br from-gray-50 to-white hover:from-[#FF6900]/5 hover:to-[#0021A5]/5 transition-all duration-300 border-0 hover:shadow-lg transform hover:-translate-y-1 cursor-pointer"
+                onClick={() => window.open(project.url, '_blank')}
+              >
                 <div className="text-center space-y-4">
                   <div className="text-4xl">{project.icon}</div>
                   <div>
@@ -173,7 +185,10 @@ export default function BlogSection() {
                     variant="outline" 
                     size="sm"
                     className="border-[#0021A5] text-[#0021A5] hover:bg-[#0021A5] hover:text-white transition-all duration-300"
-                    onClick={() => window.open(project.url, '_blank')}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      window.open(project.url, '_blank');
+                    }}
                   >
                     Visit Project
                     <ExternalLink className="w-3 h-3 ml-2" />
